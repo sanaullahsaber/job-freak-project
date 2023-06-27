@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Professional Left Panel Example</title>
+  <style>
+    body {
+      display: flex;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+  
+    #left-panel {
+      width: 200px;
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+    }
+  
+    #left-panel ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+  
+    #left-panel li {
+      margin-bottom: 10px;
+    }
+  
+    #left-panel li a {
+      text-decoration: none;
+      color: #fff;
+      display: block;
+      padding: 10px;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+  
+    #left-panel li a:hover {
+      background-color: #555;
+    }
+  
+    #content {
+      flex-grow: 1;
+      padding: 20px;
+    }
+  
+    #content h1 {
+      margin-top: 0;
+      color: #333;
+    }
+  
+    #content p {
+      line-height: 1.5;
+      color: #777;
+    }
+  
+    #content>div {
+      display: none;
+    }
+  
+    #content>div:target {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <div id="left-panel">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#information">Information</a></li>
+      <li><a href="#guide">Guide</a></li>
+    </ul>
+  </div>
+
+  <div id="content">
+    <div id="home">
+      <h1>Home</h1>
+      <p>This is the home content.</p>
+    </div>
+    <div id="contact">
+      <h1>Contact</h1>
+      <p>This is the contact information.</p>
+    </div>
+    <div id="information">
+      <h1>Information</h1>
+      <p>This is some information.</p>
+    </div>
+    <div id="guide">
+      <h1>Guide</h1>
+      <p>This is the guide content.</p>
+    </div>
+    <div id="default" style="display: block;">
+      <h1>Welcome to the Professional Left Panel Example</h1>
+      <p>This is the default content that is shown by default.</p>
+    </div>
+  </div>
+</body>
+
+</html>
